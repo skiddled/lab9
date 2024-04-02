@@ -1,19 +1,14 @@
 function init(){
-
-  var alertme = document.getElementById('entrybutton');
-
-  function testfunction(){
-    var text = document.getElementById('entryinput');
-    document.getElementById('textoutput').innerHTML = text.value;
-    alert("Atan Antar: " + text.value);
-   
+  var button = document.getElementById('entrybutton');
+  
+  function showMeText(){
+    var textbox = document.getElementById('entryinput');
+    document.getElementById('textoutput').innerHTML = textbox.value;
+    alert("Atan Antar: " + textbox.value);
   }
-
-  button.addEventListener('click', testfunction);
- 
-
-
-
-}
+  
+  button.addEventListener('click', showMeText);
+  
+  }
 
 window.addEventListener('load', init);
