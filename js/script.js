@@ -4,7 +4,8 @@ function init(){
 
   function testfunction(){
     var text = document.getElementById('entryinput');
-    alert("Atan Antar");
+    document.getElementById('textoutput').innerHTML = text.value;
+    alert("Atan Antar: " + text.value);
    
   }
 
