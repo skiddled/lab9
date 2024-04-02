@@ -1,8 +1,9 @@
 function init(){
   var button = document.getElementById('entrybutton');
+  var textbox = document.getElementById('entryinput');
   
   function showMeText(){
-    var textbox = document.getElementById('entryinput');
+    
     document.getElementById('textoutput').innerHTML = textbox.value;
     alert("Atan Antar: " + textbox.value);
   }
